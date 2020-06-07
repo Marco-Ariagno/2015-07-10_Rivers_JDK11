@@ -1,0 +1,37 @@
+package it.polito.tdp.rivers.model;
+
+public class River {
+	
+	private int id ;
+	private String name ;
+	
+	public River(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "River[" + id + ", " + name + "]";
+	}
+	
+	
+
+}
