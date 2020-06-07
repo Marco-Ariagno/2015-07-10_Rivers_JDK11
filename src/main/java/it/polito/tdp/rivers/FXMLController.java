@@ -10,11 +10,12 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-//controller turno A --> switchare al branch master_turnoB per turno B
+//controller turno B --> switchare al branch master_turnoA per turno A
 
 public class FXMLController {
 	
 	private Model model;
+
 
     @FXML
     private ResourceBundle resources;
@@ -26,16 +27,16 @@ public class FXMLController {
     private ComboBox<?> boxRiver;
 
     @FXML
-    private TextField txtStartDate;
-
-    @FXML
-    private TextField txtEndDate;
-
-    @FXML
-    private TextField txtNumMeasurements;
+    private TextField txtFMin;
 
     @FXML
     private TextField txtFMed;
+
+    @FXML
+    private TextField txtFMax;
+
+    @FXML
+    private TextField txtNumMeasurements;
 
     @FXML
     private TextField txtK;
@@ -49,10 +50,10 @@ public class FXMLController {
     @FXML
     void initialize() {
         assert boxRiver != null : "fx:id=\"boxRiver\" was not injected: check your FXML file 'Rivers.fxml'.";
-        assert txtStartDate != null : "fx:id=\"txtStartDate\" was not injected: check your FXML file 'Rivers.fxml'.";
-        assert txtEndDate != null : "fx:id=\"txtEndDate\" was not injected: check your FXML file 'Rivers.fxml'.";
-        assert txtNumMeasurements != null : "fx:id=\"txtNumMeasurements\" was not injected: check your FXML file 'Rivers.fxml'.";
+        assert txtFMin != null : "fx:id=\"txtFMin\" was not injected: check your FXML file 'Rivers.fxml'.";
         assert txtFMed != null : "fx:id=\"txtFMed\" was not injected: check your FXML file 'Rivers.fxml'.";
+        assert txtFMax != null : "fx:id=\"txtFMax\" was not injected: check your FXML file 'Rivers.fxml'.";
+        assert txtNumMeasurements != null : "fx:id=\"txtNumMeasurements\" was not injected: check your FXML file 'Rivers.fxml'.";
         assert txtK != null : "fx:id=\"txtK\" was not injected: check your FXML file 'Rivers.fxml'.";
         assert btnSimula != null : "fx:id=\"btnSimula\" was not injected: check your FXML file 'Rivers.fxml'.";
         assert txtResult != null : "fx:id=\"txtResult\" was not injected: check your FXML file 'Rivers.fxml'.";
